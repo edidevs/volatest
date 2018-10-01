@@ -28,14 +28,13 @@ function findMatchValue(input, pos, list) {
     }
     if (list.length > 0) {
        if(list.join('') === input){
-           console.log(JSON.stringify(list));
+           console.log(list.toString());
            value="true";
        }
        if(value==="false"){
-         console.log(JSON.stringify(list));
+         console.log(list.toString());
        }
     }
 }
 
 findMatchValue("programmerit", 0, []);
-
